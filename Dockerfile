@@ -5,7 +5,7 @@ WORKDIR /app
 RUN pip install --no-cache-dir fastapi uvicorn python-multipart torch torchvision pillow
 
 COPY src/sps_genai /app/sps_genai
-COPY cnn_cifar10.pth /app/cnn_cifar10.pth
+COPY *.pth /app/
 
 EXPOSE 8000
 
